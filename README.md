@@ -1,37 +1,57 @@
 
-# Lojas Duraren
+# Projeto de Desenvolvimento de Dispositivos Móveis, Web e Games - Lojas Duraren
 
-Website de Ecommerce que faça a recomendação de produtos e com o sistema de comentarios. 
+Desenvolvimento de um site de vendas com funcionalidades de comentários e recomendações de produtos, como projeto avaliativo da disciplina de Desenvolvimento de Dispositivos Móveis, Web e Games.
 
 
 ## Funcionalidades
 
 - Temas dark e light
-- Recomendação de produtos 
+- Sistema de contas
+- Sistema de Recomendação de produtos com base no gosto do usuario
 - Sistema de comentarios
-- Sistema de recomendação
-
+- Sistema de cadastro de livros
+- Sistema de filtro de comentarios 
 
 ## Aprendizados
 
 Aprendi bastante com esse projeto no que diz respeito a sintaxe do javascript assim como a imprementação de sistemas mais complexos como o sistema de comentarios e recomendações me deram uma base muito forte para proximos projetos.
 
 
-## Instalação
+## Estrutura
 
-Instale my-project com npm
+- `frontend/`: interface em React e Tailwind.
+- `backend/`: API em Express e persistência SQLite.
 
-```bash
-  npm install my-project
-  cd my-project
+## Como executar localmente
+
+Instale as dependências uma vez em cada pasta:
+
+```powershell
+cd backend
+npm install
 ```
-    
-## Documentação
 
-[Documentação](https://link-da-documentação)
+```powershell
+cd frontend
+npm install
+```
 
+Abra dois terminais na pasta principal do repositório. No primeiro:
 
-## Demonstração
+```powershell
+cd backend
+npm run dev
+```
 
-Insira um gif ou um link de alguma demonstração
+No segundo:
+
+```powershell
+cd frontend
+npm start
+```
+
+O frontend abre em `http://localhost:3000` e encaminha `/api` para o backend na porta `4000`. O banco é criado automaticamente em `backend/data/duraren.sqlite` na primeira execução.
+
+Veja [backend/README.md](backend/README.md) para entender as rotas e a estrutura das tabelas.
 

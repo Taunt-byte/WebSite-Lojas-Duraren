@@ -1,0 +1,9 @@
+**/node_modules/
+**/build/
+backend/data/*.sqlite
+backend/data/*.sqlite-shm
+backend/data/*.sqlite-wal
+**/.env
+**/.env.local
+**/.env.*.local
+npm-debug.log*

@@ -1,0 +1,7 @@
+.book-cover {
+  transform-style: preserve-3d;
+}
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
